@@ -36,45 +36,55 @@
             timeout-ms = <50>;
             key-positions = <0 1 2 3>;
             bindings = <&mo 6>;
-            layers = <0 4 1 5>;
+            layers = <0 1>;
         };
 
         del {
             bindings = <&kp DEL>;
             key-positions = <2 1>;
-            layers = <0 1 4 5>;
+            layers = <0 1>;
         };
 
         bspc1 {
             bindings = <&kp BACKSPACE>;
             key-positions = <3 2>;
-            layers = <0 1 4 5>;
+            layers = <0 1>;
         };
 
         del_word1 {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <1 2 3>;
+            layers = <0>;
         };
 
         caps_left {
             bindings = <&kp CAPS>;
             key-positions = <24 23 22 21>;
+            layers = <0>;
         };
 
         caps_right {
             bindings = <&kp CAPS>;
             key-positions = <27 28 29 30>;
+            layers = <0>;
         };
 
-        ctrl_c1 {
+        ctrl_c {
             bindings = <&kp LC(C)>;
             key-positions = <22 23>;
+            layers = <0>;
         };
 
         ctrl_v {
             bindings = <&kp LC(V)>;
             key-positions = <24 23>;
             layers = <0>;
+        };
+
+        screen {
+            bindings = <&kp LG(LS(S))>;
+            key-positions = <22 23 24>;
+            layers = <4>;
         };
     };
 
