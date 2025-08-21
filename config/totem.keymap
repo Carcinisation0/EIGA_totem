@@ -32,15 +32,15 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
+        mouse {
             timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
+            key-positions = <0 1 2 3>;
+            bindings = <&mo 6>;
             layers = <0 4 1 5>;
         };
 
-        mtg {
-            bindings = <&mo 6>;
+        del {
+            bindings = <&kp DEL>;
             key-positions = <2 1>;
             layers = <0 1 4 5>;
         };
@@ -51,9 +51,30 @@
             layers = <0 1 4 5>;
         };
 
-        delwrd1 {
+        del_word1 {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <1 2 3>;
+        };
+
+        caps_left {
+            bindings = <&kp CAPS>;
+            key-positions = <24 23 22 21>;
+        };
+
+        caps_right {
+            bindings = <&kp CAPS>;
+            key-positions = <27 28 29 30>;
+        };
+
+        ctrl_c1 {
+            bindings = <&kp LC(C)>;
+            key-positions = <22 23>;
+        };
+
+        ctrl_v {
+            bindings = <&kp LC(V)>;
+            key-positions = <24 23>;
+            layers = <0>;
         };
     };
 
