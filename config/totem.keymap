@@ -84,13 +84,53 @@
 
             bindings = <
        &kp Q       &kp W       &kp F             &kp P               &kp B        &kp J    &kp L                &kp U              &kp Y       &kp SEMI
-       &mt LGUI A  &mt LALT R  &mt LEFT_SHIFT S  &mt LEFT_CONTROL T  &kp G        &kp M    &mt RIGHT_CONTROL N  &mt RIGHT_SHIFT E  &mt RALT I  &mt RGUI O
-&kp Q  &kp X       &kp C       &kp D             &kp V               &kp Z        &kp K    &kp H                &kp COMMA          &kp DOT     &kp FSLH    &kp BSLH
-                               &kp DEL           &lt 1 TAB           &kp SPACE    &kp RET  &lt 2 ESC            &kp BSPC
+       &mt LGUI A  &mt LALT R  &mt LEFT_SHIFT S  &mt LEFT_CONTROL T  &kp G        &kp M    &mt RIGHT_CONTROL N  &mt RIGHT_SHIFT E  &mt RALT I  &mt RIGHT_WIN O
+&kp Q  &kp X       &kp C       &kp D             &kp V               &kp Z        &kp K    &kp H                &kp COMMA          &kp DOT     &kp FSLH         &kp BSLH
+                               &kp DEL           &lt 4 TAB           &kp SPACE    &kp RET  &lt 1 ESC            &kp BSPC
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+        sym {
+            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+
+            label = "SYM";
+
+            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+            //             ┃     !     ┃     @     ┃     #     ┃     $     ┃     %     ┃   ┃     ˆ     ┃     &     ┃     Ü     ┃     '     ┃     "     ┃
+            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
+            //             ┃     Ä     ┃           ┃    SZ     ┃           ┃           ┃   ┃   MUTE    ┃   YEN     ┃   EURO    ┃  POUND    ┃     Ö     ┃
+            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
+            // ┃           ┃  EMAIL1   ┃  EMAIL2   ┃           ┃           ┃           ┃   ┃   VOL-    ┃   VOL+    ┃   LAST    ┃   NEXT    ┃     \     ┃           ┃
+            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+            //                                     ┃           ┃    GIF    ┃    ADJ    ┃   ┃           ┃           ┃           ┃
+            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+
+            bindings = <
+         &kp N6     &kp N7           &kp N8     &kp N9        &kp N0       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp PIPE   &kp DQT
+         &kp N1     &kp N2           &kp N3     &kp NUMBER_4  &kp N5       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDER      &kp EQUAL  &kp SINGLE_QUOTE
+&kp DOT  &kp SLASH  &kp KP_MULTIPLY  &kp MINUS  &kp PLUS      &kp COMMA    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GRAVE      &kp TILDE  &kp BSLH          &kp DOUBLE_QUOTES
+                                     &none      &gif          &none        &kp RIGHT_SHIFT       &none                  &none
+            >;
+        };
+
+        game {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        game+ {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
 
         nav {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -116,29 +156,12 @@
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        sym {
-            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-
-            label = "SYM";
-
-            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃     !     ┃     @     ┃     #     ┃     $     ┃     %     ┃   ┃     ˆ     ┃     &     ┃     Ü     ┃     '     ┃     "     ┃
-            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃     Ä     ┃           ┃    SZ     ┃           ┃           ┃   ┃   MUTE    ┃   YEN     ┃   EURO    ┃  POUND    ┃     Ö     ┃
-            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃           ┃  EMAIL1   ┃  EMAIL2   ┃           ┃           ┃           ┃   ┃   VOL-    ┃   VOL+    ┃   LAST    ┃   NEXT    ┃     \     ┃           ┃
-            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃           ┃    GIF    ┃    ADJ    ┃   ┃           ┃           ┃           ┃
-            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-
+        fun {
             bindings = <
-         &kp N6     &kp N7           &kp N8     &kp N9        &kp N0       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp PIPE   &kp DQT
-         &kp N1     &kp N2           &kp N3     &kp NUMBER_4  &kp N5       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDER      &kp EQUAL  &kp SINGLE_QUOTE
-&kp DOT  &kp SLASH  &kp KP_MULTIPLY  &kp MINUS  &kp PLUS      &kp COMMA    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GRAVE      &kp TILDE  &kp BSLH          &kp DOUBLE_QUOTES
-                                     &none      &gif          &none        &kp RIGHT_SHIFT       &none                  &none
+        &kp F1        &kp F2        &kp F3          &kp F4            &kp F5      &kp F6    &kp F7             &kp F8           &kp F9        &kp F10
+        &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp F12     &kp F11   &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp LEFT_ALT  &kp RIGHT_WIN
+&trans  &trans        &trans        &trans          &trans            &kp CAPS    &kp CAPS  &trans             &trans           &trans        &trans         &trans
+                                    &trans          &trans            &trans      &trans    &trans             &trans
             >;
         };
 
