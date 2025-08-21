@@ -86,6 +86,24 @@
             key-positions = <22 23 24>;
             layers = <4>;
         };
+
+        g1 {
+            bindings = <&kp N1>;
+            key-positions = <2 1>;
+            layers = <2>;
+        };
+
+        g2 {
+            bindings = <&kp N2>;
+            key-positions = <3 2>;
+            layers = <2>;
+        };
+
+        g3 {
+            bindings = <&kp N3>;
+            key-positions = <3 4>;
+            layers = <2>;
+        };
     };
 
     macros {
