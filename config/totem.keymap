@@ -145,10 +145,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q       &kp W       &kp F             &kp P               &kp B          &kp J           &kp L                &kp U              &kp Y       &kp SEMI
-           &mt LGUI A  &mt LALT R  &mt LEFT_SHIFT S  &mt LEFT_CONTROL T  &kp G          &kp M           &mt RIGHT_CONTROL N  &mt RIGHT_SHIFT E  &mt RALT I  &mt RIGHT_WIN O
-&lt 5 ESC  &kp X       &kp C       &kp D             &kp V               &kp Z          &kp K           &kp H                &kp COMMA          &kp DOT     &kp FSLH         &kp BSLH
-                                   &kp LEFT_CONTROL  &mo 4               &lt 1 SPACE    &kp LEFT_SHIFT  &kp RIGHT_ALT        &sl 5
+           &kp Q  &kp W  &kp F             &kp P  &kp B          &kp J           &kp L          &kp U      &kp Y    &kp SEMI
+           &kp A  &kp R  &kp S             &kp T  &kp G          &kp M           &kp N          &kp E      &kp I    &kp O
+&lt 5 ESC  &kp X  &kp C  &kp D             &kp V  &kp Z          &kp K           &kp H          &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
+                         &kp LEFT_CONTROL  &mo 4  &lt 1 SPACE    &kp LEFT_SHIFT  &kp RIGHT_ALT  &sl 5
             >;
         };
 
@@ -179,7 +179,7 @@
         game {
             bindings = <
          &kp TAB           &kp Q  &kp W   &kp E  &kp R        &trans  &trans          &kp UP_ARROW  &trans     &trans
-         &kp LEFT_SHIFT    &kp A  &kp S   &kp D  &sl 3        &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp ENTER
+         &kp RIGHT_SHIFT   &kp A  &kp S   &kp D  &sl 3        &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp ENTER
 &kp ESC  &kp LEFT_CONTROL  &kp Z  &kp X   &kp C  &kp F        &trans  &trans          &trans        &trans     &trans     &to 0
                                   &trans  &mo 4  &kp SPACE    &trans  &trans          &trans
             >;
