@@ -50,6 +50,11 @@
             key-positions = <3 2>;
             layers = <0 1 4 5>;
         };
+
+        delwrd1 {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <1 2 3>;
+        };
     };
 
     macros {
