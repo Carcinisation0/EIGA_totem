@@ -107,13 +107,13 @@
 
         numpad_comma {
             bindings = <&kp COMMA>;
-            key-positions = <4 14>;
+            key-positions = <13 12>;
             layers = <1>;
         };
 
         numpad_dot {
             bindings = <&kp DOT>;
-            key-positions = <3 13>;
+            key-positions = <12 11>;
             layers = <1>;
         };
 
