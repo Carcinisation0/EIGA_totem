@@ -144,6 +144,19 @@
         num_enter {
             bindings = <&kp ENTER>;
             key-positions = <13 12 11 10>;
+            layers = <0 1>;
+        };
+
+        num0 {
+            bindings = <&kp N0>;
+            key-positions = <13 12>;
+            layers = <1>;
+        };
+
+        num5 {
+            bindings = <&kp N5>;
+            key-positions = <11 12>;
+            layers = <1>;
         };
     };
 
