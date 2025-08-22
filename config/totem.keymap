@@ -140,6 +140,11 @@
             key-positions = <7 6>;
             layers = <0>;
         };
+
+        num_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <13 12 11 10>;
+        };
     };
 
     macros {
