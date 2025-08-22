@@ -116,6 +116,18 @@
             key-positions = <3 13>;
             layers = <1>;
         };
+
+        ctrl_z {
+            bindings = <&kp LC(Z)>;
+            key-positions = <25 24>;
+            layers = <0>;
+        };
+
+        ctrl_y {
+            bindings = <&kp LC(Y)>;
+            key-positions = <13 14>;
+            layers = <0>;
+        };
     };
 
     macros {
