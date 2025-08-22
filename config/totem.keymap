@@ -158,6 +158,18 @@
             key-positions = <11 12>;
             layers = <1>;
         };
+
+        vol_dn {
+            bindings = <&kp C_VOLUME_DOWN>;
+            key-positions = <23 22>;
+            layers = <4>;
+        };
+
+        vol_up {
+            bindings = <&kp C_VOLUME_UP>;
+            key-positions = <24 23>;
+            layers = <4>;
+        };
     };
 
     macros {
