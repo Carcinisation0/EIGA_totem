@@ -128,6 +128,18 @@
             key-positions = <13 14>;
             layers = <0>;
         };
+
+        quote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <7 8>;
+            layers = <1>;
+        };
+
+        quote_single {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <7 6>;
+            layers = <1>;
+        };
     };
 
     macros {
