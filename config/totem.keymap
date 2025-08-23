@@ -28,6 +28,28 @@
     tapping-term-ms = <170>;
 };
 
+behaviors {
+        td0: td0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD0";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+        };
+
+    hm_f: hm_f {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HM_F";
+        #binding-cells = <0>;
+        flavor = "tap-preferred";     // domyślnie F
+        tapping-term-ms = <300>;      // czas, po którym traktuje jako hold
+        quick-tap-ms = <300>;         // szybkie kolejne tapy = F
+        bindings = <&kp F>, <&kp LSHFT>;
+    };
+
+
+    };
+
+
 / {
     combos {
         compatible = "zmk,combos";
