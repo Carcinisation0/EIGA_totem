@@ -28,6 +28,7 @@
     tapping-term-ms = <170>;
 };
 
+/{
 behaviors {
     hm_f: hm_f {
         compatible = "zmk,behavior-hold-tap";
@@ -38,10 +39,8 @@ behaviors {
         quick-tap-ms = <300>;         // szybkie kolejne tapy = F
         bindings = <&kp F, &kp LSHFT>;
     };
-
-
     };
-
+};
 
 / {
     combos {
