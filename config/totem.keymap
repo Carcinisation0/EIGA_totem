@@ -30,14 +30,15 @@
 
 /{
 behaviors {
-    hm_f: hm_f {
+    hrm_f: hrm_f {
         compatible = "zmk,behavior-hold-tap";
-        label = "HM_F";
-        #binding-cells = <0>;
-        flavor = "tap-preferred";     // domyślnie F
-        tapping-term-ms = <300>;      // czas, po którym traktuje jako hold
-        quick-tap-ms = <300>;         // szybkie kolejne tapy = F
-        bindings = <&kp F, &kp LSHFT>;
+        label = "HRM_F";
+        #binding-cells = <2>;
+        flavor = "balanced";
+        require-prior-idle-ms = <300>;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <200>;
+        hold-trigger-on-release;
     };
     };
 };
@@ -226,7 +227,7 @@ behaviors {
 
             bindings = <
            &kp Q  &kp W  &kp F             &kp P  &kp B          &kp J           &kp L          &kp U      &kp Y    &kp SEMI
-           &kp A  &kp R  &kp S             &kp T  &kp G          &kp M           &kp N          &kp E      &kp I    &kp O
+           &kp A  &kp R  &kp S             &hrm_f &kp F &kp LEFT_SHIFT  &kp G          &kp M           &kp N          &kp E      &kp I    &kp O
 &lt 5 ESC  &kp X  &kp C  &kp D             &kp V  &kp Z          &kp K           &kp H          &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
                          &kp LEFT_CONTROL  &mo 4  &lt 1 SPACE    &kp LEFT_SHIFT  &kp RIGHT_ALT  &sl 5
             >;
