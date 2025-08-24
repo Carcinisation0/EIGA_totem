@@ -38,6 +38,14 @@
     tapping-term-ms = <170>;
 };
 
+ZMK_HOLD_TAP(hml,
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    require-prior-idle-ms = <QUICK_TAP_MS>;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;
+    hold-trigger-on-release;
+    bindings = <&kp>, <&kp>;
+)
 
 
 / {
@@ -184,24 +192,6 @@
         };
     };
 
-
-    behaviors {
-
-        hm_l: hrms_left {
-    compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    bindings = <&kp T &kp LEFT_SHIFT>;
-
-    flavor = "balanced";
-    tapping-term-ms = <HM_TAPPING_TERM>;
-    quick-tap-ms = <175>;
-    require-prior-idle-ms = <HM_PRIOR_IDLE>;
-
-    hold-trigger-key-positions = <KEYS_R KEYS_T>;
-    hold-trigger-on-release;
-};
-
-};
 
 
 
