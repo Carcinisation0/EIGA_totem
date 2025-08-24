@@ -29,7 +29,6 @@
 #define TVP2 5
 
 #include "settings.dtsi"
-#include "timeless_hrms.dtsi"
 
 
 &mt {
